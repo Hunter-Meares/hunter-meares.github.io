@@ -1,4 +1,4 @@
-# Reese Thurman 
+# Hunter Meares
 
 I’m a software developer and computer science graduate with a passion for **software development,** **game design, and worldbuilding**.
 My goal is to build interactive and immersive experiences that blend creativity, storytelling, and technology.
@@ -45,9 +45,9 @@ Inspired by grand strategy and simulation titles, *Imperium* challenges players 
 
 ## Connect with Me
 
-* **LinkedIn:** [linkedin.com/in/reese-thurman](https://linkedin.com/in/reese-thurman)
-* **Email:** [reese.thurman@example.com](mailto:reese.thurman@example.com) *(replace with your real one)*
-* **Portfolio Website:** [https://reese-thurman.github.io/](https://reese-thurman.github.io/)
+* **LinkedIn:** [linkedin.com/in/hunter-meares](https://linkedin.com/in/hunter-meares)
+* **Email:** [huntermeares@protonmail.com](mailto:huntermeares@protonmail.com) 
+* **Portfolio Website:** [https://hunter-meares.github.io/](https://hunter-meares.github.io/)
 
 ---
 
