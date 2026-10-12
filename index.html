@@ -3,216 +3,327 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reese Thurman — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Hunter Meares — Portfolio</title>
+  <meta name="description" content="Hunter Meares: software developer and computer science graduate building games and interactive worlds." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
 
-<!DOCTYPE html>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0d1117, #1a1f2b);
+      background-attachment: fixed;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reese Thurman — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; }
+    a { color: #58a6ff; }
 
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #0d1117, #1a1f2b);
-  color: #e6edf3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding: 40px 20px;
-}
+    .intro-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      width: 100%;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
 
-.intro-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
-  width: 100%;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 60px;
-}
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #58a6ff;
+      background: linear-gradient(135deg, #161b22, #1f2a3a);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #58a6ff;
+      letter-spacing: 2px;
+    }
 
-.profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 3px solid #58a6ff;
-  object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  flex-shrink: 0;
-}
+    .intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
 
-.intro-text {
-  flex: 1;
-  min-width: 250px;
-}
+    .intro-text h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px 0;
+      color: #58a6ff;
+    }
 
-.intro-text h1 {
-  font-size: 2.5rem;
-  margin: 0 0 10px 0;
-  color: #58a6ff;
-}
+    .intro-text p {
+      line-height: 1.6;
+      color: #c9d1d9;
+      margin-bottom: 15px;
+    }
 
-.intro-text p {
-  line-height: 1.6;
-  color: #c9d1d9;
-  margin-bottom: 15px;
-}
+    .socials {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
 
-.socials {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-}
+    .socials a {
+      color: #8b949e;
+      font-size: 1.4rem;
+      transition: color 0.2s;
+    }
 
-.socials a {
-  color: #8b949e;
-  font-size: 1.4rem;
-  transition: color 0.2s;
-}
+    .socials a:hover,
+    .socials a:focus-visible {
+      color: #58a6ff;
+    }
 
-.socials a:hover {
-  color: #58a6ff;
-}
+    h2.section-title {
+      width: 100%;
+      max-width: 900px;
+      font-size: 1.5rem;
+      color: #e6edf3;
+      margin: 0 0 20px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #30363d;
+    }
 
-.github-main {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  background-color: #238636;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
-  margin-top: 10px;
-}
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 60px;
+    }
 
-.github-main:hover {
-  background-color: #2ea043;
-}
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  width: 100%;
-  max-width: 900px;
-}
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+    }
 
-.card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 12px;
-  padding: 25px;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+    .card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.25rem;
+      color: #79c0ff;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
-}
+    .status {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      border: 1px solid;
+    }
 
-.card h2 {
-  margin-top: 0;
-  color: #79c0ff;
-}
+    .status.live { color: #3fb950; border-color: #238636; }
+    .status.dev  { color: #d29922; border-color: #9e6a03; }
 
-.card p {
-  font-size: 0.95rem;
-  color: #adbac7;
-  margin-bottom: 20px;
-}
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      color: #adbac7;
+      margin: 0 0 16px 0;
+    }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  background-color: #238636;
-  color: white;
-  font-weight: 600;
-  transition: background 0.2s;
-}
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
 
-.button:hover {
-  background-color: #2ea043;
-}
+    .tags span {
+      font-size: 0.75rem;
+      color: #c9d1d9;
+      background: #21262d;
+      border-radius: 6px;
+      padding: 3px 8px;
+    }
 
-footer {
-  margin-top: 60px;
-  font-size: 0.85rem;
-  color: #8b949e;
-}
+    .actions {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-@media(max-width: 700px){
-  .intro-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .intro-text {
-    text-align: center;
-  }
-}
+    .button {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      background-color: #238636;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
 
+    .button:hover,
+    .button:focus-visible {
+      background-color: #2ea043;
+    }
+
+    .button.secondary {
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+    }
+
+    .button.secondary:hover,
+    .button.secondary:focus-visible {
+      background-color: #30363d;
+    }
+
+    .coursework {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .course {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #adbac7;
+      font-size: 0.9rem;
+      transition: border-color 0.2s;
+    }
+
+    .course:hover,
+    .course:focus-visible {
+      border-color: #58a6ff;
+    }
+
+    .course strong {
+      color: #79c0ff;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+
+    @media (max-width: 700px) {
+      .intro-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .intro-text {
+        text-align: center;
+      }
+      .socials {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
   <section class="intro-container">
-    <img src="profile.jpg" alt="Profile picture" class="profile-img" />
+    <div class="avatar" aria-hidden="true">HM</div>
     <div class="intro-text">
-      <h1>Reese Thurman</h1>
+      <h1>Hunter Meares</h1>
       <p>
-        I’m a software developer with a background in Computer Science and a passion for creating interactive gaming applications.
-        My work blends creativity, design, and technology to build immersive experiences.
+        I’m a software developer and computer science graduate with a passion for game design and worldbuilding.
+        I build interactive, immersive experiences that blend creativity, storytelling, and technology.
       </p>
       <div class="socials">
-        <a href="https://github.com/reese-thurman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/reese-thurman" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:reese.thurman@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Hunter-Meares" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:huntermeares@protonmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </section>
 
+  <h2 class="section-title">Projects</h2>
   <section class="projects">
     <div class="card">
-      <h2>Rome: The Eternal City</h2>
-      <p>A browser-based strategy game inspired by ancient Rome. Players explore, expand, and manage the politics, economy, and factions of a living empire.</p>
-      <a href="https://github.com/reese-thurman/rome" class="button" target="_blank">View Repository</a>
+      <h3>Rome: The Eternal City</h3>
+      <span class="status live">Playable · Player testing</span>
+      <p>
+        A free, text-based multiplayer MUD set at the height of the Roman Empire, where the myths are true and the gods shape the story.
+        Over 800 rooms, turn-based combat, crafting, factions, and fourteen gods to serve.
+      </p>
+      <div class="tags"><span>Python</span><span>Evennia</span><span>Django</span></div>
+      <div class="actions">
+        <a href="https://rome.vineyard.haus/" class="button" target="_blank" rel="noopener">Play Now</a>
+        <a href="https://github.com/Hunter-Meares/rome" class="button secondary" target="_blank" rel="noopener">Repository</a>
+      </div>
     </div>
 
-<div class="card">
-  <h2>Imperium</h2>
-  <p>A sci-fi strategy game where players command fleets, colonize planets, and wage galactic warfare in a tick-based, persistent universe.</p>
-  <a href="https://github.com/reese-thurman/imperium" class="button" target="_blank">View Repository</a>
-</div>
+    <div class="card">
+      <h3>Ashes of the Republic</h3>
+      <span class="status dev">In development</span>
+      <p>
+        A 2D, single-player, story-driven RPG set in the final decades of the Roman Republic, for PC and Android.
+      </p>
+      <div class="tags"><span>Godot 4</span><span>GDScript</span></div>
+    </div>
 
+    <div class="card">
+      <h3>Imperium</h3>
+      <span class="status dev">Early development</span>
+      <p>
+        A tick-based, browser-based space strategy game. Build fleets, colonize planets, and outsmart rivals in a persistent universe.
+      </p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <div class="actions">
+        <a href="https://github.com/Hunter-Meares/imperium" class="button secondary" target="_blank" rel="noopener">Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Computer Science Coursework</h2>
+  <section class="coursework">
+    <a class="course" href="https://github.com/Hunter-Meares/CS-210" target="_blank" rel="noopener"><strong>CS 210</strong> Programming Languages</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-230" target="_blank" rel="noopener"><strong>CS 230</strong> Operating Platforms</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-250" target="_blank" rel="noopener"><strong>CS 250</strong> Software Development Lifecycle</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-255" target="_blank" rel="noopener"><strong>CS 255</strong> System Analysis and Design</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-300" target="_blank" rel="noopener"><strong>CS 300</strong> Data Structures and Algorithms</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-305" target="_blank" rel="noopener"><strong>CS 305</strong> Software Security</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-320" target="_blank" rel="noopener"><strong>CS 320</strong> Software Testing and Quality</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-330" target="_blank" rel="noopener"><strong>CS 330</strong> Computational Graphics</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-340" target="_blank" rel="noopener"><strong>CS 340</strong> Client/Server Development</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-350" target="_blank" rel="noopener"><strong>CS 350</strong> Emerging System Architectures</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-360" target="_blank" rel="noopener"><strong>CS 360</strong> Mobile Architecture</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-370" target="_blank" rel="noopener"><strong>CS 370</strong> Emerging Trends in CS</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-465" target="_blank" rel="noopener"><strong>CS 465</strong> Full Stack Development</a>
+    <a class="course" href="https://github.com/Hunter-Meares/CS-499" target="_blank" rel="noopener"><strong>CS 499</strong> Computer Science Capstone</a>
   </section>
 
   <footer>
-    2025 Reese Thurman
+    © 2026 Hunter Meares
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-

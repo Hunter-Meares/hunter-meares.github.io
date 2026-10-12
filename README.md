@@ -7,23 +7,32 @@ My goal is to build interactive and immersive experiences that blend creativity,
 
 ## Current Projects
 
-### [Rome: The Eternal City](https://github.com/reese-thurman/rome)
+### [Rome: The Eternal City](https://github.com/Hunter-Meares/rome)
 
-A browser-based strategy and roleplaying game inspired by classical Roman culture and mythology.
-Players can explore ancient civilizations, form alliances, and engage in dynamic political and military systems.
+A free, text-based multiplayer MUD set at the height of the Roman Empire, where the myths are true and the gods actively shape the story.
+Over 800 rooms, turn-based combat, crafting, factions and cults, and devotion to fourteen gods.
 
-**Tech Stack:** HTML, CSS, JavaScript, Node.js *(in development)*
-**Status:** Early development — gameplay systems and UI prototyping.
+**Tech Stack:** Python, Evennia, Django
+**Status:** Player testing. [Play in your browser](https://rome.vineyard.haus/)
 
 ---
 
-### [Imperium](https://github.com/reese-thurman/imperium)
+### Ashes of the Republic
+
+A 2D, single-player, story-driven RPG set in the final decades of the Roman Republic, for PC and Android.
+
+**Tech Stack:** Godot 4, GDScript
+**Status:** Early prototype.
+
+---
+
+### [Imperium](https://github.com/Hunter-Meares/imperium)
 
 A science fiction empire-building game focused on space exploration, diplomacy, and long-term strategic growth.
 Inspired by grand strategy and simulation titles, *Imperium* challenges players to manage vast interstellar domains.
 
-**Tech Stack:** Modern web technologies *(to be finalized)*
-**Status:** Design and early backend development.
+**Tech Stack:** HTML, CSS, JavaScript
+**Status:** Early development.
 
 ---
 
@@ -38,15 +47,14 @@ Inspired by grand strategy and simulation titles, *Imperium* challenges players 
 
 ## GitHub Stats
 
-![Reese's GitHub Stats](https://github-readme-stats.vercel.app/api?username=reese-thurman\&show_icons=true\&theme=tokyonight\&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=reese-thurman\&layout=compact\&theme=tokyonight\&hide_border=true)
+![Hunter's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Hunter-Meares&show_icons=true&theme=tokyonight&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Hunter-Meares&layout=compact&theme=tokyonight&hide_border=true)
 
 ---
 
 ## Connect with Me
 
-* **LinkedIn:** [linkedin.com/in/hunter-meares](https://linkedin.com/in/hunter-meares)
-* **Email:** [huntermeares@protonmail.com](mailto:huntermeares@protonmail.com) 
+* **Email:** [huntermeares@protonmail.com](mailto:huntermeares@protonmail.com)
 * **Portfolio Website:** [https://hunter-meares.github.io/](https://hunter-meares.github.io/)
 
 ---
