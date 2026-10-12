@@ -7,7 +7,7 @@ My goal is to build interactive and immersive experiences that blend creativity,
 
 ## Current Projects
 
-### [Rome: The Eternal City](https://github.com/Hunter-Meares/rome)
+### [Rome: The Eternal City](https://github.com/Hunter-Meares/rome-the-eternal-city)
 
 A free, text-based multiplayer MUD set at the height of the Roman Empire, where the myths are true and the gods actively shape the story.
 Over 800 rooms, turn-based combat, crafting, factions and cults, and devotion to fourteen gods.
